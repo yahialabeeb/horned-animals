@@ -1,5 +1,7 @@
-# horned-animals.
+# horned-animals
+
 using react
+
 Number and name of feature:
 
 Estimate of time needed to complete:
