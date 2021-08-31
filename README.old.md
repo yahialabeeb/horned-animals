@@ -2,12 +2,12 @@
 
 using react
 
-Number and name of feature:
+Number and name of feature: all features
 
-Estimate of time needed to complete:
+Estimate of time needed to complete: 3 hours
 
-Start time:
+Start time: 1:20
 
-Finish time: 
+Finish time: 3:20
 
-Actual time needed to complete: 
+Actual time needed to complete: 2 hours
