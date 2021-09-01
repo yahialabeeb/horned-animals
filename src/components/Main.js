@@ -6,28 +6,28 @@ import HornedForm from './HornedForm';
 
 class Main extends React.Component {
 
-   
+
     constructor(props) {
         super(props);
         this.state = {
             numHorns: 0
         }
-      }
+    }
 
     updateValue = (value) => {
-    console.log(value);
+        console.log(value);
         this.setState({
-         numHorns: value 
+            numHorns: value
         });
-      }
+    }
 
-        render() {
-            const animalArr = dataJson.map((beast) => {
-                
-                if ((beast.horns == this.state.numHorns)||(this.state.numHorns == 0)) {
-                    console.log(this.state.numHorns);
+    render() {
+        const animalArr = dataJson.map((beast) => {
+
+            if ((beast.horns === Number(this.state.numHorns)) || (this.state.numHorns ===0)) {
+                console.log(this.state.numHorns);
                 return (
-                    
+
                     <HornedBeast
                         title={beast.title}
                         image_url={beast.image_url}
@@ -38,30 +38,32 @@ class Main extends React.Component {
 
                     />
                 );
-                 }  else { 
-                    console.log(this.state.numHorns);
-                    }
-            })
-        
+            } else {
+                return (
+                console.log(this.state.numHorns)
+                );
+            }
+        })
 
-            return (
-                <div>
-                    <HornedForm 
+
+        return (
+            <div>
+                <HornedForm
                     updateValue={this.updateValue}
-                    />
-                    <CardGroup>
+                />
+                <CardGroup>
 
-                        {animalArr}
+                    {animalArr}
 
-                    </CardGroup>
-                </div>
-            );
-        }
-
-
+                </CardGroup>
+            </div>
+        );
     }
 
-    export default Main;
+
+}
+
+export default Main;
 
 
 
