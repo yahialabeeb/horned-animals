@@ -45,10 +45,10 @@ class App extends React.Component {
         <SelectedBeast
           handleClose={this.handleClose}
           show={this.state.show}
-          title={this.state.data[0].title}
-          image_url={this.state.data[0].image_url}
-          description={this.state.data[0].description}
-          horns={this.state.data[0].horns}
+          title1={this.state.data[0].title}
+          image_url1={this.state.data[0].image_url}
+          description1={this.state.data[0].description}
+          horns1={this.state.data[0].horns}
         />
 
       </div>

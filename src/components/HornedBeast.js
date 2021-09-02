@@ -37,10 +37,11 @@ class HornedBeast extends React.Component {
                     <Card.Body>
                         <Card.Title>This animal name is  {this.props.title}</Card.Title>
                         <Card.Text>
-                            {this.props.description}
-                            <p> {this.props.horns} </p>
-                            <p>Number of ❤️ are {this.state.votes}</p>
-
+                        
+                            {this.props.description} <br/>
+                            {this.props.horns} <br/>
+                            Number of ❤️ are {this.state.votes}
+                            
                         </Card.Text>
                         <Button onClick={this.increaseVotes}> VOTE !!</Button>
                     </Card.Body>

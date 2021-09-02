@@ -8,6 +8,10 @@ class SelectedBeast extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            numOfHorns: 0
+    }
+
     }
 
 
@@ -19,13 +23,13 @@ class SelectedBeast extends React.Component {
             <div>
                 <Modal show={this.props.show} onHide={this.props.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>{this.props.title}</Modal.Title>
+                        <Modal.Title>{this.props.title1}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <img src= {this.props.image_url} width = "465px" />
+                    <img src= {this.props.image_url1} width = "465px" />
                 <br/>
 
-                    {this.props.description}
+                    {this.props.description1}
                         </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.props.handleClose}>
