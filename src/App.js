@@ -8,10 +8,10 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       show: false,
       data: [dataJson[0]],
-      rendering: "",
     }
 
   }
@@ -23,11 +23,9 @@ class App extends React.Component {
   }
 
 
-
   updatingcontant = (hornedName) => {
-    this.state.data = dataJson.filter(animal => animal.title === hornedName)
-    
-  
+     let dataaa =  dataJson.filter(animal => animal.title === hornedName) 
+     this.setState({ data: dataaa })
   }
 
 

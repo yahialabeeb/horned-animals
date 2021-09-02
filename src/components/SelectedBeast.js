@@ -9,7 +9,7 @@ class SelectedBeast extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            numOfHorns: 0
+            notUseless: 0
     }
 
     }
@@ -26,7 +26,7 @@ class SelectedBeast extends React.Component {
                         <Modal.Title>{this.props.title1}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <img src= {this.props.image_url1} width = "465px" />
+                    <img src= {this.props.image_url1} width = "465px" alt = {this.props.title1}/>
                 <br/>
 
                     {this.props.description1}
