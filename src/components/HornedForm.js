@@ -15,6 +15,7 @@ class HornedForm extends React.Component {
         saving = (e) => {
                 console.log(e.target.value);
                 this.setState({ numOfHorns: e.target.value });
+                handelSubmit(); 
         }
 
 
