@@ -24,7 +24,8 @@ class Main extends React.Component {
     render() {
         const animalArr = dataJson.map((beast,index) => {
 
-            if ((beast.horns === Number(this.state.numHorns)) || (this.state.numHorns === 0)) {
+            if ((beast.horns === Number(this.state.numHorns)) || (this.state.numHorns === 0)|| (this.state.numHorns === '0')) {
+
                 console.log(this.state.numHorns);
                 return (
 
