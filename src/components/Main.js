@@ -22,25 +22,27 @@ class Main extends React.Component {
     }
 
     render() {
-        const animalArr = dataJson.map((beast) => {
+        const animalArr = dataJson.map((beast,index) => {
 
-            if ((beast.horns === Number(this.state.numHorns)) || (this.state.numHorns ===0)|| (this.state.numHorns === '0')) {
+            if ((beast.horns === Number(this.state.numHorns)) || (this.state.numHorns === 0)|| (this.state.numHorns === '0')) {
+
                 console.log(this.state.numHorns);
                 return (
 
                     <HornedBeast
+                    key={index}
+                        updatingcontant={this.props.updatingcontant}
                         title={beast.title}
                         image_url={beast.image_url}
                         description={beast.description}
                         horns={beast.horns}
                         handleClose={this.props.handleClose}
 
-
                     />
                 );
             } else {
                 return (
-                console.log(this.state.numHorns)
+                    console.log(this.state.numHorns)
                 );
             }
         })
@@ -50,6 +52,7 @@ class Main extends React.Component {
             <div>
                 <HornedForm
                     updateValue={this.updateValue}
+
                 />
                 <CardGroup>
 
